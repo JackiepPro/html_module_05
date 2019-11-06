@@ -78,7 +78,7 @@ body {
 /* end header */
 
 .intro {
-    background-image: url(image/banner1.jpg);
+    background-image: url(../image/banner1.jpg);
     background-color: green;
     height: 600px;
     margin-bottom: 101px;
@@ -122,11 +122,13 @@ body {
     display: block;
     height: 104px;
     width: 104px;
-    background-image: url('./image/prev.png');
+    background-image: url('../image/prev.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .intro-text::after {
-    content: '>';
+    content: '';
     font-size: 24pt;
     text-align: center;
     line-height: 140px;
@@ -139,6 +141,9 @@ body {
     display: block;
     height: 104px;
     width: 104px;
+    background-image: url('../image/next.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .heading {
