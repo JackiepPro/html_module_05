@@ -232,12 +232,17 @@ body {
 .all-icons a:nth-of-type(4) {
     margin: 0;
     background-color: #323232;
-    width: 166px;
+    width: 172px;
     height: 50px;
+    margin-top: 7px;
 }
 
 .all-icons a:nth-of-type(4) span {
     line-height: 24px;
+}
+
+.span-text {
+    float: right;
 }
 
 .button-overlay:hover {
@@ -256,17 +261,7 @@ body {
     color: #fff;
 }
 
-.button-overlay {
-    /* position: absolute; */
-    position: relative;
-    left: 0;
-    top: 142px;
-    text-align: center;
-    /* opacity: 0; */
-    transition: opacity .35s ease;
-    cursor: pointer;
-    background-color: red;
-}
+
 
 .box-goods li:nth-child(4n) {
     margin-right: 0;
