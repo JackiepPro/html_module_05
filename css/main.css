@@ -77,10 +77,8 @@ body {
     color: #1abc9c;
 }
 /* end header */
-
 .intro {
     background-image: url(../image/banner1.jpg);
-    background-color: green;
     height: 600px;
     margin-bottom: 101px;
     background-position: center;
@@ -225,6 +223,10 @@ body {
     height: 23px;
 }
 
+.all-icons {
+    opacity: 0;
+}
+
 .all-icons a:nth-of-type(3) {
     margin: 0;
 }
@@ -261,11 +263,10 @@ body {
     color: #fff;
 }
 
-
-
 .box-goods li:nth-child(4n) {
     margin-right: 0;
 }
+
 
 .box-goods__li,
 .all-icons a:nth-of-type(4) > img {
