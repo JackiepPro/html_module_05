@@ -184,10 +184,9 @@ body {
     width: 255px;
 }
 
-.box-goods__li:hover > .box-goods__link .name-goods {
+.box-goods__li:hover .name-goods {
     background-color: #1abc9c;
 }
-
 
 .box-goods__img {
     display: block;
@@ -225,6 +224,13 @@ body {
 
 .all-icons {
     opacity: 0;
+    position: absolute;
+    bottom: 100px;
+    left: 40px;
+}
+
+.overlay:hover .all-icons {
+    opacity: 1;
 }
 
 .all-icons a:nth-of-type(3) {
@@ -285,7 +291,9 @@ body {
     font-weight: 900;
     line-height: 2.5;
     padding-left: 14px;
+    color: #fff;
 }
+
 
 .price-goods {
     padding: 0 12px;
