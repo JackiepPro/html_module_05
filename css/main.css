@@ -202,6 +202,7 @@ body {
 .box-goods__li:hover .overlay {
     display: block;
     background-color: rgba(0, 0, 0, 0.5);
+    border: 10px solid #fff;
 }
 
 .overlay {
@@ -209,10 +210,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0);
-    transition:  0.5s ease;
+    transition: all 0.2s linear;
     height: 322px;
-    border: 10px solid #fff;
 }
 
 .button-overlay {
