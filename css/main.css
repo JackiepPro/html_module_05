@@ -52,7 +52,6 @@ body {
 
 .navigation {
     line-height: 3;
-    display: inline-block;
     float: right;
 }
 
@@ -115,46 +114,26 @@ body {
     position: relative;
     padding-top: 217px;
     margin: 0 auto;
-    /* width: 870px; */
 }
 
-.intro-text::before {
-    content: '';
-    font-size: 24pt;
+.slider-arrow {
+    font-size: 24px;
     text-align: center;
-    line-height: 140px;
+    line-height: 130px;
     color: #fff;
     background-color: #1abc9c;
-    float: left;
-    position: relative;
-    top: 30px;
+    height: 104px;
+    width: 104px;
+    position: absolute;
     bottom: 0;
-    left: -81px;
-    display: block;
-    height: 104px;
-    width: 104px;
-    background-image: url('../image/prev.png');
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.intro-text::after {
-    content: '';
-    font-size: 24pt;
-    text-align: center;
-    line-height: 140px;
-    color: #fff;
-    background-color: #1abc9c;
-    float: right;
-    position: relative;
-    top: -80px;
-    right: -81px;
-    display: block;
-    height: 104px;
-    width: 104px;
-    background-image: url('../image/next.png');
-    background-repeat: no-repeat;
-    background-position: center;
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
 }
 
 .heading {
@@ -229,7 +208,6 @@ body {
     display: inline-block;
     margin-right: 19px;
     margin-bottom: 30px;
-    width: 255px;
 }
 
 .box-sm-goods:hover .overlay2 {
@@ -245,6 +223,7 @@ body {
     left: 0;
     top: 0;
     position: absolute;
+    
 }
 
 .overlay2:hover .all-icons {
@@ -254,7 +233,7 @@ body {
 .icons2 {
     position: relative;
     bottom: -100px;
-    left: 38px;
+    left: 30px;
 }
 
 .icons2 a:nth-of-type(3) {
