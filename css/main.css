@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.img {
+    display: block;
+}
+
 @font-face {
     font-family: 'MyriadPro-Regular';
     src: url(fonts/MyriadPro-Regular.otf);
@@ -190,9 +194,11 @@ body {
     width: 255px;
 }
 
-.box-goods__li:hover .name-goods {
+
+.box-sm-goods:hover .name-goods{
     background-color: #1abc9c;
 }
+
 
 .box-goods__img {
     display: block;
@@ -205,19 +211,11 @@ body {
     border: 10px solid #fff;
 }
 
-.overlay {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 322px;
-}
 
 .button-overlay {
     display: inline-block;
     border: 1px solid #fff;
     padding: 14px 12px 13px;
-    width: 50px;
     height: 50px;
 }
 
@@ -226,49 +224,52 @@ body {
     height: 23px;
 }
 
-.all-icons {
-    opacity: 0;
-    position: absolute;
-    bottom: 100px;
-    left: 33px;
-}
-
-.test {
+.box-sm-goods {
     position: relative;
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 19px;
     margin-bottom: 30px;
     width: 255px;
 }
 
-.test:hover .overlay2 {
+.box-sm-goods:hover .overlay2 {
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
+    border: 10px solid #fff;
 }
 
 .overlay2 {
     height: 100%;
     opacity: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    position: absolute;
 }
 
-.overlay:hover .all-icons,
 .overlay2:hover .all-icons {
     opacity: 1;
 }
 
-.all-icons a:nth-of-type(3) {
+.icons2 {
+    position: relative;
+    bottom: -100px;
+    left: 38px;
+}
+
+.icons2 a:nth-of-type(3) {
     margin: 0;
 }
 
-.all-icons a:nth-of-type(4) {
+.icons2 a:nth-of-type(4) {
     margin: 0;
     background-color: #323232;
-    width: 172px;
+    width: 178px;
     height: 50px;
     margin-top: 7px;
 }
 
-.all-icons a:nth-of-type(4) span {
+.icons2 a:nth-of-type(4) span {
     line-height: 24px;
 }
 
@@ -281,7 +282,7 @@ body {
     border: 1px solid #1abc9c;
 }
 
-.all-icons a {
+.icons2 a {
     margin-right: 7px;
 }
 
@@ -294,15 +295,6 @@ body {
 
 .basket:hover {
     border: 1px solid #fff;
-}
-
-.box-goods li:nth-child(4n) {
-    margin-right: 0;
-}
-
-.box-goods__li,
-.all-icons a:nth-of-type(4) > img {
-    float: left;
 }
 
 .price-goods {
@@ -335,96 +327,9 @@ body {
     clear: both;
 }
 
-/* block-news */
-.content {
-    padding-bottom: 81px;
-}
-
-.block {
-    clear: both;
-    overflow: hidden; /* Отменяем обтекание */
-}
-
-.block-news {
-    float: left;
+.goodies {
     margin-top: 81px;
 }
-
-.box-new {
-    display: inline-block;
-    width: 350px;
-    margin-right: 26px;
-}
-
-.box-new:nth-of-type(3) {
-    margin: 0;
-}
-
-.box-new__heading, .box-new__text {
-    color: #555252;
-}
-
-.box-new__heading {
-    text-decoration: none;
-    font: 18px 'Open-sans', sans-serif;
-    font-weight: 700;
-    position: relative;
-    margin-bottom: 34px;
-    letter-spacing: -1px;
-}
-
-.box-new__heading::after {
-    display: block;
-    position: absolute;
-    content: "";
-    height: 3px;
-    width: 136px;
-    background-color: #1abc9c;
-    top: 60px;
-    left: 0;
-    bottom: 0;
-    margin: 0 auto;
-}
-
-.box-new__pic {
-    margin-bottom: 14px;
-    display: inline-block;
-}
-
-.box-new__pic:hover {
-    opacity: 0.6;
-}
-
-.box-new__text {
-    font: 14px 'MyriadPro-Regular', sans-serif;
-    font-weight: 400;
-    text-align: left;
-}
-
-.box-new__link {
-    background-color: #1abc9c;
-    padding: 19px 42px 18px 43px;
-    font: 16px 'Open-sans', sans-serif;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 3px;
-    display: inline-block;
-    margin-top: 17px;
-    font-weight: 300;
-}
-
-.box-new__link:hover {
-    background-color: #515151;
-
-}
-
-.box-new__text, 
-.box-new__link,
-.box-new__heading {
-    line-height: 26px;
-}
-
-/*end  block-news */
 
 /* footer */
 .footer {
