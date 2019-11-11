@@ -233,7 +233,26 @@ body {
     left: 33px;
 }
 
-.overlay:hover .all-icons {
+.test {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 255px;
+}
+
+.test:hover .overlay2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.overlay2 {
+    height: 100%;
+    opacity: 0;
+}
+
+.overlay:hover .all-icons,
+.overlay2:hover .all-icons {
     opacity: 1;
 }
 
