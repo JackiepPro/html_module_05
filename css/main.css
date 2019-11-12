@@ -174,11 +174,9 @@ body {
     width: 255px;
 }
 
-
 .box-sm-goods:hover .name-goods{
     background-color: #1abc9c;
 }
-
 
 .box-goods__img {
     display: block;
@@ -190,7 +188,6 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     border: 10px solid #fff;
 }
-
 
 .button-overlay {
     display: inline-block;
@@ -215,6 +212,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 1;
     border: 10px solid #fff;
+    border-bottom: 55px solid #fff;
 }
 
 .overlay2 {
